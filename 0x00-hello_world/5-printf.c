@@ -1,3 +1,4 @@
+gg
 #include <stdio.h>
 /**
  * main - Entry
