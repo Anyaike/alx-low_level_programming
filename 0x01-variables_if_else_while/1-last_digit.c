@@ -1,8 +1,8 @@
-#include <stdio.h>#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main: - Entry point
  *
  * Return: 0 if successful
  * a non-zero otherwise
@@ -18,7 +18,7 @@ r = n % 10;
 
 if (r > 5)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, r)
+printf("Last digit of %d is %d and is greater than 5\n", n, r);
 }
 
 else if (r == 0)
