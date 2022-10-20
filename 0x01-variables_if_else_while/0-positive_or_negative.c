@@ -1,34 +1,35 @@
-nclude <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
-* main-program entry point.
-* Return: 0 if no error, non-zero value if error.
-*/
+ * main - Entry point
+ *
+ * Description: function prints \"Programming is positive, zero, or negative
+ * returns zero otherwise
+ * Return: 0
+ */
 int main(void)
 {
-	        int n;
+int n;
 
-	        int ldigit;
-	        srand(time(0));
-	        n = rand() - RAND_MAX / 2;
-	        ldigit = n % 10;
-	        if (ldigit> 5)> 
-  {
-			                printf("Last digit of %d is %d and is greater than 5\n", n
-					, ldigit);
-  }
-	        else if (ldigit == 0	
-			
-  {
-			                printf("Last digit of %d is %d and is 0\n", n, ldigit);
-			        }
-	        else if (ldigit < 6 && ldigit != 0)
-		        {
-			                printf("Last digit of %d is %d and is less than 6 and not
-					0\n", n, ldigit);
-			        }
-	        return (0);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+
+if (n > 0)
+{
+printf("%d is positive\n", n);
 }
 
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
 
+else if (n < 0)
+{
+printf("%d is negative\n", n);
+}
+
+return (0);
+}
